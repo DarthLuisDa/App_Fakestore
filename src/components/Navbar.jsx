@@ -1,10 +1,13 @@
 import { Link, useNavigate } from "react-router-dom";   /* importa los componentes Link y useNavigate de la biblioteca "react-router-dom" */
-import { useLogin } from "../hooks/useLogin";     /* importa el hook useLogin desde el archivo  "../hooks/useLogin" */
+import { useLogin } from "/src/hooks/useLogin";     /* importa el hook useLogin desde el archivo  "../hooks/useLogin" */
+import React, { useEffect, useState } from "react";
+
 
 const Navbar = () => {    /* Se define un componente llamado Navbar */
   const { user, logout } = useLogin();   /* Dentro del componente Navbar se utiliza el hook useLogin para obtener el usuario y la función logout */
   const navigate = useNavigate();     /* Se utiliza el hook useNavigate para obtener la función navigate */
   const [cartCount, setCartCount] = useState(0);   /* Se utiliza el hook useState para crear una variable de estado llamada cartCount, con un valor inicial de 0 */
+ 
 
   const handleLogout = async () => {    /* Se define una función llamada handleLogout que se ejecuta cuando se hace clic en el botón de cerrar sesión */
     await logout();     /*  Dentro de handleLogout se llama a la función logout */   
@@ -18,8 +21,7 @@ const Navbar = () => {    /* Se define un componente llamado Navbar */
 
         <Link to="/cart">
           Carrito <span className="bg-red-500 text-white rounded-md px-2">{cartCount}</span>
-          
-        </Link>     {/* Se muestra el texto "Carrito" seguido de la variable de estado cartCount */}
+           </Link>     {/* Se muestra el texto "Carrito" seguido de la variable de estado cartCount */}
 
         {!user ? (           /* Dependiendo de si hay un usuario autenticado o no, */
           <Link to="/login">Iniciar sesión</Link>         /*  se muestra el texto "Iniciar sesión" */
@@ -37,8 +39,11 @@ const Navbar = () => {    /* Se define un componente llamado Navbar */
       </div>
     </nav>
   );
-};
 
+ };
+
+
+export default Navbar;
 
 /* export default Home; */
 
@@ -102,7 +107,6 @@ const Home = () => {
   );
 };
 
-export default Navbar; */
 
 /* export default Home; */
 

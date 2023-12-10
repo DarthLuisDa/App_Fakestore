@@ -15,6 +15,8 @@ const cartReducer = (state, action) => {   /* función llamada cartReducer que r
     }
 }
 
+setCartCount(cartCount + 1);
+
 const initialValue= {                /*  initialValue define el valor inicial del estado del carrito,  */
     cart: JSON.parse(localStorage.getItem("cart") ?? "[]")  /* obteniendo los datos almacenados en el localStorage o creando un arreglo vacío si no hay datos */
 }

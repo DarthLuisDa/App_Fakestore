@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tailwind base
+Esta línea importa los estilos base proporcionados por Tailwind CSS. Estos estilos incluyen aspectos como el tamaño del cuadro, el margen, el relleno, los estilos de fuente y las propiedades básicas de diseño. Se aplican a todos los elementos de su aplicación y sirven como base para su tema. */
+
+/*  Tailwind components
+Esta línea importa los componentes de interfaz de usuario prediseñados de Tailwind. Estos componentes incluyen botones, formularios, entradas, etc., y proporcionan estilos listos para usar que puede aplicar fácilmente a su marcado. */
+
+/*   Tailwind utilities
+Esta línea importa las clases de servicios públicos de Tailwind. Estas clases son el núcleo de Tailwind y brindan control granular sobre varios aspectos de la apariencia de su elemento, como color, espaciado, tamaño, bordes, sombras y mucho más. */
+
+/* Juntas, estas tres directivas incorporan todos los estilos necesarios de Tailwind a su archivo CSS, lo que le permite comenzar a usarlos directamente en su marcado para diseñar su sitio web. */

@@ -1,17 +1,19 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react'      /* Importaciones */
+import ReactDOM from 'react-dom/client'      /* Importaciones */
+import App from './App.jsx'    /* Importando funcion App() del App.jsx */
+import './index.css'     /* Importando el index.css */
 
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { initializeApp } from "firebase/app";    /* Importando Modulos */
+import { getAnalytics } from "firebase/analytics";    /* Importando Modulos */
+import { getAuth } from "firebase/auth";                /* Importando Modulos */
+import { getFirestore } from "firebase/firestore";      /* Importando Modulos */
 
+//Importaciones para el Firebase
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+//Conexion con mi Firebase
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -26,7 +28,7 @@ const firebaseConfig = {
 
 
 
-// Initialize Firebase
+// Inicializando Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 export const auth = getAuth(app);

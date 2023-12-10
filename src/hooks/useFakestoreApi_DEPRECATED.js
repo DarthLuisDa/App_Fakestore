@@ -1,4 +1,4 @@
-/* Se quito para usar Firebase */
+/* Se quito para usar Firebase. Esto contiene la conexion URL con una tienda falsa en linea */
 
 
 /* import { useState } from "react";
@@ -17,7 +17,7 @@ export const useFakestoreApi = () => {
   const getProducts = async () => {
     try {
       setLoading(true);
-      const url = "https://fakestoreapi.com/products";
+      const url = "https://fakestoreapi.com/products";       /*Aqui esta la conexion a la tienda falsa
       const result = await fetchData(url, "GET_PRODUCTS");
       setData(result);
     } catch (error) {
