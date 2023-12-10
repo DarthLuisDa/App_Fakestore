@@ -1,3 +1,5 @@
+/* Se quito para usar Firebase */
+
 
 /* import { useState } from "react";
 import { useReducer } from "react";
